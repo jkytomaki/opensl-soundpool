@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView android:id="@+id/textView2" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:text="@string/title_player_controls"></TextView>
+
+<TableLayout android:id="@+id/tableLayout1" android:layout_height="wrap_content" android:layout_width="match_parent">
+    <TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageButton android:layout_width="wrap_content" android:text="@string/play" android:layout_height="wrap_content" android:id="@+id/button1" android:src="@drawable/ic_media_play"></ImageButton>
+        <TextView android:id="@+id/textView3" android:text="@string/play_rnd" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    </TableRow>
+    <TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ToggleButton android:layout_width="wrap_content" 
+        android:id="@+id/toggleButton1" 
+        android:layout_height="wrap_content" 
+        android:drawableTop="@drawable/ic_media_play"
+        android:textOn=""
+        android:textOff=""></ToggleButton>
+        <TextView android:id="@+id/textView1" android:text="@string/play_rnd_loop" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    </TableRow>
+    <TableRow android:id="@+id/tableRow3" android:layout_width="wrap_content" android:layout_height="wrap_content"></TableRow>
+    <TableRow android:id="@+id/tableRow4" android:layout_width="wrap_content" android:layout_height="wrap_content"></TableRow>
+</TableLayout>
+<LinearLayout android:id="@+id/linearLayout1" android:layout_height="wrap_content" android:layout_width="match_parent">
+</LinearLayout>
+<LinearLayout android:id="@+id/linearLayout2" android:layout_height="wrap_content" android:layout_width="match_parent">
+</LinearLayout>
+<TextView android:id="@+id/textView4" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:text="@string/title_sound_implementation"></TextView>
+<RadioGroup android:id="@+id/radioGroup1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RadioButton android:id="@+id/radio_android_sp" android:layout_height="wrap_content" android:layout_width="wrap_content" android:checked="true" android:text="@string/android_soundpool"></RadioButton>
+    <RadioButton android:id="@+id/radio_ndk_sp" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/ndk_sound_pool"></RadioButton>
+</RadioGroup>
+</LinearLayout>
